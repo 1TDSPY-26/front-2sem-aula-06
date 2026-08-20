@@ -1,4 +1,6 @@
+import { Outlet } from "react-router";
 import Gustavo from "./components/Gustavo/Gustavo";
+import Cabecalho from "./components/Cabecalho/cabecalho";
 
 export default function App() {
   //Declarar constantes e variaveis
@@ -6,8 +8,8 @@ export default function App() {
   return(
     
    <div>
-      <h1>Meu Componente</h1>
-      <Gustavo sobreNome1="Rapozo" sobreNome2 ="da Silva"/>
+      <Cabecalho/>
+      </Outlet>
    </div>
   );
 
