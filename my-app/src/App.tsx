@@ -1,12 +1,12 @@
-import Hugo from "./components/Hugo/Hugo"
+import { Outlet } from "react-router"
+// import Hugo from "./components/Hugo/Hugo"
+import Header from "./components/Header/Header"
 
 export default function App(){
   return (
     <div>
-      <h1>Meu Componente</h1>
-      <div>
-        <Hugo suberNames={["Leite", "Chimendes", "Silva", "Oliveira"]} />
-      </div>
+        <Header />
+        <Outlet />
     </div>
   )
 }
