@@ -1,4 +1,6 @@
-import vitor from "./components/VitorReis/vitor"
+import { Outlet } from "react-router";
+import Cabecalho from "./components/Cabecalho/Cabecalho";
+//import Vitor from "./components/vitor/vitor";
 
 export default function App() {
   //Declarar constantes e Variaveis
@@ -6,8 +8,8 @@ export default function App() {
   return (
     //Aqui voce cria todo conteudo HTML de apresentacao
     <div>
-      <h1>oi</h1>
-      <vitor />
+      <Cabecalho />
+      <Outlet />
     </div>
 
   );
