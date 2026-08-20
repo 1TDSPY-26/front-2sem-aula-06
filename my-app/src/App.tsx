@@ -7,8 +7,9 @@ export default function App() {
   // Declarar constantes e variáveis
 
   return (
+    
     <div>
-      
+      <Cabecalho />
       <Outlet />
       
     </div>

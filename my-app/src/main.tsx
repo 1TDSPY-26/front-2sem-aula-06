@@ -6,7 +6,7 @@ import Produto from './routes/Produto/index.tsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 const router = createBrowserRouter([
-  {"path": "/", "element": <App />}, erroeElement: <Home />, children:[
+  {"path": "/", "element": <Home />}, erroeElement: <Home />, children:[
     {"path": "/produto", "element": <Produto />},
     {"path": "/home", "element": <Home />}
 
