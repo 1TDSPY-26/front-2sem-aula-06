@@ -1,3 +1,4 @@
+import { Outlet } from "react-router";
 import Jonatan from "./components/Jonatan/Jonatan";
 
 export default function App() {
@@ -9,8 +10,9 @@ export default function App() {
 
     
   <div>
-    <h1>Meu Componente</h1>
-    <Jonatan/>
+     
+
+<Outlet/>
 
   </div>
 
