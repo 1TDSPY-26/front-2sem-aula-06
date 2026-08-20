@@ -1,14 +1,11 @@
-import Joao from "./components/Joao Paulo/Joao";
+import Isabelle from "./components/Isabelle/Isabelle";
 
 export default function App(){
-  //Declarar constantes de variaveis
-
-  return(
+  
+  return (
     <div>
-    {/** Aqui voce vai criar todo conteudo HTML de apresentação */}
-    <h1>Meu Componente</h1>
-    <Joao sobreNome="Vieira Rodrigues"/>
-
+      <h1>Meu Componente</h1>
+      <Isabelle sobreNome="Dantas"/>
     </div>
   );
 }
