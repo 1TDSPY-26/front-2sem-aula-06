@@ -1,4 +1,6 @@
+import { Outlet } from 'react-router';
 import Yasmin from './components/Yasmin/Yasmin';
+import Cabecalho from './components/Cabecalho/Cabecalho';
 
 
 export default function App() {
@@ -7,8 +9,8 @@ export default function App() {
   return (
     <div>
       {/** Conteúdo da aplicação */}
-      <h1>Olá, mundo!</h1>
-      <Yasmin sobreNome1="Nunes" sobreNome2="Santos"/>
+      <Cabecalho/>
+      <Outlet/>
     </div>
   );
 }
