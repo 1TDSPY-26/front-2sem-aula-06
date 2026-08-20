@@ -1,15 +1,17 @@
-import Heloisa from './components/Heloisa';
+import { Outlet } from 'react-router';
+import Heloisa from './components/Heloisa/Heloisa';
+import Cabecalho from './routes/Cabecalho/Cabecalho';
+
+
 export default function App() {
-  // Declarar constantes e variáveis
-  return(
 
+
+  return (
     <div>
-    {/**Aqui você cria todo conteúdo HTML de apresentação*/}
-
-    <h1>Meu Componente</h1>
-    <Heloisa />
+      
+      <Cabecalho />
+      <Outlet />
 
     </div>
-
   );
 }
