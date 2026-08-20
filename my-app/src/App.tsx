@@ -1,4 +1,6 @@
+import { Outlet } from "react-router";
 import Ale from "./components/Ale/Ale";
+import Cabecalho from "./components/Cabecalho/Cabecalho";
 
 export default function App() {
   //Declarar constantes e variáveis
@@ -10,9 +12,9 @@ export default function App() {
 
   return ( 
     <div>
-      {/** Aqui você cria todo conteúdo HTML de apresentação. */}
-      <h1>Meu Componente</h1>
-      <Ale sobreNome={[sobreNome1,sobreNome2]}/>
+        <Cabecalho/>
+        <Outlet/>
+
     </div>
   );
 
